@@ -1,4 +1,4 @@
-
+'use client'
 import Image from "next/image";
 import blue from "../../../public/image/blue-background.png";
 import a1 from "../../../public/image/a-1.svg";
@@ -18,7 +18,7 @@ function MainSection() {
               <div className="pera__1 pt-3">
                 <h2>We manage your  IT, <br /> <span>so you can manage <br />your business.</span> </h2>
                 <p className="pt-2">Take charge of your buiness continuity with innovation IT solution</p>
-                <button>Let's Discuss <span><MdArrowOutward /></span></button>
+                <button>Let&apos;s Discuss <span><MdArrowOutward /></span></button>
               </div>
               <div className="d-flex mt-3 compnay__logo">
                 <div>

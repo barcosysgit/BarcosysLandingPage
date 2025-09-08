@@ -43,6 +43,7 @@ function DoneProject() {
     const handlePrev = () => {
         setProgress((prev) => Math.max(prev - 20, 0));
     };
+console.log(progress);
 
     return (
         <section className="DoneProject___">
