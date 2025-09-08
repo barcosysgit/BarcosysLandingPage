@@ -1,0 +1,1154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+@font-face {
+  font-family: "RoobertTRIAL";
+  src: url("../../public/fonts/RoobertTRIAL-Regular-BF67243fd53fdf2.otf") format("woff2"),
+    url("../../public/fonts/RoobertTRIAL-Regular-BF67243fd53fdf2.otf") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+p {
+  color: #353535;
+  font-family: "RoobertTRIAL";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "RoobertTRIAL";
+}
+
+button {
+  font-family: "RoobertTRIAL";
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  max-width: 1000px !important;
+}
+
+.main__header {
+  display: flex;
+  justify-content: space-between;
+  background: #FFF;
+  box-shadow: 0 9px 53px 0 rgba(0, 0, 0, 0.07);
+
+  button {
+    background-color: transparent;
+    border: 2px solid #345991;
+    padding: 0.3rem 1rem;
+    border-radius: 0.2rem;
+    font-family: "RoobertTRIAL";
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+
+    /* blinking background */
+    animation: blink-bg 1.5s infinite;
+  }
+
+  @keyframes blink-bg {
+
+    0%,
+    100% {
+      background: #156bce;
+      /* normal blue */
+    }
+
+    50% {
+      background: #0a111a;
+      /* darker blue */
+    }
+  }
+
+
+}
+
+.second__section {
+  background-image: url(../../public//image//main-bg.png);
+  animation: fadeIn 1.2s ease-in-out;
+
+
+  .pera__1 {
+    h2 {
+      font-weight: 400;
+      font-size: 42px;
+      line-height: 44px;
+      font-family: "RoobertTRIAL";
+      opacity: 0;
+      transform: translateY(30px);
+      animation: slideUp 0.8s ease forwards;
+      span {
+        font-size: 40px;
+        font-weight: 700;
+        font-family: "RoobertTRIAL";
+        animation-delay: 0.2s;
+
+
+      }
+    }
+
+    p {
+      color: #345991;
+      font-size: 1.2rem;
+      font-weight: 500;
+      font-family: "RoobertTRIAL";
+      animation-delay: 0.4s;
+
+      line-height: 22px;
+    }
+
+    button {
+      background-color: transparent;
+      border: 2px solid #345991;
+      padding: 0.3rem 1rem;
+      border-radius: 2rem;
+      font-family: "RoobertTRIAL";
+      font-size: 0.8rem;
+       animation-delay: 0.6s;
+
+      &:hover {
+        background-color: #156BCE;
+        border: 2px solid #156BCE;
+        color: white;
+      }
+
+    }
+  }
+
+  .blue__background___ {
+    position: relative;
+
+    img {
+      min-height: 1rem;
+      max-height: 24rem;
+        transform: scale(1.03); // zoom on hover
+    }
+
+    .main___ {
+
+      .text__ {
+        width: 70%;
+        position: absolute;
+        left: 168px;
+        top: 9px;
+        font-family: "RoobertTRIAL";
+                animation: fadeIn 1.4s ease-in-out forwards;
+
+
+
+        h4 {
+          color: white;
+          font-family: "RoobertTRIAL";
+
+        }
+
+        p {
+          font-size: 0.8rem;
+          color: white;
+          font-weight: 400;
+          font-family: "RoobertTRIAL";
+
+        }
+      }
+
+      .card {
+        width: 22rem;
+        display: block;
+        position: absolute;
+        top: 100px;
+        right: 40px;
+        padding: 0.3rem 0.8rem 0rem;
+         opacity: 0;
+        transform: translateY(40px);
+        animation: slideUp 1s ease forwards;
+        animation-delay: 0.8s;
+
+        .input___ {
+          margin-bottom: 0.3rem;
+
+          input {
+            width: 100%;
+            padding: 0.4rem 0.4rem 0.4rem 0.4rem;
+            border-radius: 2px;
+            border: 1px solid rgba(32, 89, 178, 0.24);
+            background: #FBFBFC;
+            box-shadow: 3px 2px 4.7px 0 rgba(0, 0, 0, 0.05) inset;
+            font-size: 0.7rem;
+            color: black;
+            font-family: "RoobertTRIAL";
+            transition: all 0.3s ease;
+
+            &::placeholder {
+              font-size: 0.6rem;
+              color: #55555585;
+              padding: 0rem 0.4rem 0.4rem 0.4rem;
+              font-family: "RoobertTRIAL";
+            }
+          }
+
+          textarea {
+            width: 100%;
+            padding: 0.2rem;
+            border: 1px solid rgba(32, 89, 178, 0.24);
+            background: #FBFBFC;
+            box-shadow: 3px 2px 4.7px 0 rgba(0, 0, 0, 0.05) inset;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+
+
+            &::placeholder {
+              font-size: 0.6rem;
+              color: #55555585;
+
+            }
+          }
+
+          label {
+            font-size: 0.7rem;
+            font-weight: 500;
+            margin-bottom: 0.3rem;
+            font-family: "RoobertTRIAL";
+          }
+        }
+
+        .btn_____ {
+          button {
+            background: var(--Primiry-Colour, #345991);
+            padding: 0.1rem 1rem;
+            color: white;
+            border: 1px solid #345991;
+            border-radius: 0.2rem;
+            font-weight: 500;
+            font-family: "RoobertTRIAL";
+            position: relative;
+            font-size: 0.9rem;
+            top: 0.5rem;
+
+            &:hover {
+              background-color: transparent;
+              border: 1px solid #345991;
+              color: #345991;
+              background-color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+  .compnay__logo {
+    img {
+      object-fit: contain;
+      min-width: 5rem;
+      max-width: 5rem;
+      animation-delay: 1s;
+    }
+  }
+}
+
+.numbering__div {
+  background: #F1F2F5;
+
+  .borderr {
+    border-right: 1px solid #15151529;
+    border-left: 1px solid #15151529;
+  }
+
+
+  .dots__ {
+    h6 {
+      font-size: 1.9rem;
+      font-family: "RoobertTRIAL";
+      font-weight: 600;
+      animation: countUp 2s ease forwards;
+       animation: smooth-blink 2s infinite ease-in-out;
+
+    }
+
+    @keyframes smooth-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; } // 👈 stays visible but dimmed
+}
+
+    p {
+      font-size: 0.7rem;
+      font-family: "RoobertTRIAL";
+      font-weight: 500;
+      color: #353535;
+      opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 0.6s;
+
+    }
+  }
+
+}
+
+
+// 🔑 Animations
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+.whatwedo___ {
+  .border___ {
+    border-radius: 10px;
+    border: 2px solid #E5E5E8;
+    background: #FFF;
+    padding: 2rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* 🌍 Globe rotation */
+  .img-fluid {
+    animation: spin 15s linear infinite;
+    display: block;
+    margin: 0 auto; // centers the globe
+  }
+
+  .heading__ {
+    padding-top: 1rem;
+
+    button {
+      background-color: #345991;
+      color: white;
+      border: 1px solid #345991;
+      font-size: 0.7rem;
+      font-family: "RoobertTRIAL";
+      padding: 0.3rem 1rem;
+      border-radius: 0.3rem;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: transparent;
+        color: #345991;
+      }
+    }
+
+    h2 {
+      color: #000;
+      font-family: "RoobertTRIAL";
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 45px;
+      letter-spacing: 0.7px;
+      padding-top: 4rem;
+    }
+  }
+}
+
+/* Smooth 360° rotation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(30deg);
+  }
+}
+
+
+
+.service____ {
+  background-color: #E5E5E8;
+
+  .heading {
+    p {
+      color: var(--Primiry-Colour, #345991);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 36px;
+      font-family: "RoobertTRIAL";
+
+    }
+
+    h4 {
+      color: var(--353535, #353535);
+      font-family: "RoobertTRIAL";
+      font-size: 38px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 36px;
+      letter-spacing: 0.6px;
+    }
+  }
+
+  .card___ {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+    padding: 0.8rem;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      transition: 1s;
+    }
+
+    h6 {
+      color: #000;
+      font-family: "RoobertTRIAL";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 28px;
+      /* 116.667% */
+    }
+
+    p {
+      font-family: "RoobertTRIAL";
+      font-size: 0.8rem;
+      text-align: justify;
+
+    }
+
+    a {
+      font-family: "RoobertTRIAL";
+      font-size: 0.8rem;
+      text-align: justify;
+      color: #345991;
+      text-decoration: none;
+    }
+  }
+}
+
+.transforming___ {
+
+  .heading___ {
+    margin-bottom: 40px;
+
+    h4 {
+      font-size: 30px;
+      font-weight: 650;
+      line-height: 40px;
+      font-family: "RoobertTRIAL";
+      color: #000;
+
+      span {
+        color: #156bce;
+      }
+    }
+  }
+
+  .sector-card {
+    text-align: center;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-8px);
+    }
+
+    img {
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+      font-family: "RoobertTRIAL";
+      font-weight: 500;
+
+    }
+  }
+
+  .nav-progress {
+    display: flex;
+    justify-content: center; // center horizontally
+    margin-top: 30px;
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 8rem;
+      max-width: 15rem;
+      width: 100%;
+    }
+
+    button {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: #156bce;
+        color: #fff;
+      }
+    }
+
+    .progress-bar-wrapper {
+      flex: 1;
+      height: 4px;
+      background: #e5e5e5;
+      border-radius: 5px;
+      overflow: hidden;
+
+      .progress-bar-inner {
+        height: 100%;
+        background: #345991;
+        transition: width 0.3s ease;
+      }
+    }
+  }
+
+}
+
+
+.DoneProject___ {
+  .heading___ {
+    margin-bottom: 40px;
+
+    h4 {
+      font-size: 30px;
+      font-weight: 650;
+      line-height: 40px;
+      font-family: "RoobertTRIAL";
+      color: #000;
+
+      span {
+        color: #156bce;
+      }
+    }
+  }
+
+  .sector-card {
+    transition: transform 0.3s ease;
+    border-radius: 21px 31.89px 31.89px 21px;
+    border: 1.063px solid var(--Shade-Primary-lite-bg, #E7DAED);
+    background: #F1F2FF;
+
+    .heading___ {
+      h5 {
+        font-size: 2rem;
+        font-weight: 600;
+        font-family: "RoobertTRIAL";
+
+      }
+
+      p {
+        font-family: "RoobertTRIAL";
+        font-size: 0.8rem;
+        text-align: justify;
+
+      }
+
+      .read__ {
+        a {
+          text-decoration: none;
+          color: var(--353535, #353535);
+          font-family: "RoobertTRIAL";
+          font-weight: 500;
+          font-size: 0.9rem;
+
+
+        }
+      }
+    }
+
+
+
+    img {
+      margin-bottom: 0px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+      font-family: "RoobertTRIAL";
+      font-weight: 500;
+
+    }
+  }
+
+  .nav-progress {
+    display: flex;
+    justify-content: center; // center horizontally
+    margin-top: 30px;
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 8rem;
+      max-width: 15rem;
+    }
+
+    button {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: #156bce;
+        color: #fff;
+      }
+    }
+
+
+  }
+}
+
+
+.expeirence___ {
+  background-image: url(../../public/image/bannerexperience.png);
+  padding: 3rem 0rem;
+  background-size: cover;
+
+  .heading___ {
+    h4 {
+      color: var(--solid-white, #FFF);
+      font-family: "RoobertTRIAL";
+      font-size: 38px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 50px;
+
+      span {
+        color: #46D4FF;
+        font-weight: 400;
+      }
+    }
+
+    p {
+      color: white;
+      font-family: "RoobertTRIAL";
+      font-size: 0.9rem;
+      font-weight: 500;
+
+
+    }
+
+    button {
+      background: linear-gradient(92deg, #46D4FF 11.64%, #2188FF 98.44%), #FFF;
+      color: #F1F2F5;
+      border-radius: 5rem;
+      border: 1px solid #345991;
+      padding: 0.3rem 1rem;
+      font-family: "RoobertTRIAL";
+
+      &:hover {
+        background: transparent;
+        color: white;
+        border: 1px solid white;
+      }
+
+    }
+  }
+}
+
+.partner___ {
+  .heading___ {
+    padding-top: 1rem;
+
+    button {
+      background-color: #345991;
+      color: white;
+      border: 1px solid #345991;
+      font-size: 0.7rem;
+      font-family: "RoobertTRIAL";
+      padding: 0.3rem 1rem;
+      border-radius: 0.3rem;
+
+
+    }
+
+    h2 {
+      color: #000;
+      font-family: "RoobertTRIAL";
+      font-size: 35px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 45px;
+      letter-spacing: 0.7px;
+    }
+
+    p {
+      color: Gray;
+      font-family: "RoobertTRIAL";
+      font-size: 0.8rem;
+      font-weight: 500;
+
+    }
+  }
+}
+
+.footer___ {
+  background-color: #F1F2F5;
+  padding-top: 1rem;
+  padding-bottom: 0.7rem;
+
+  .heading__ {
+    p {
+      font-size: 0.8rem;
+      font-family: "RoobertTRIAL";
+      color: var(--353535, #353535);
+      font-weight: 500;
+
+
+    }
+  }
+
+  .ul__links {
+    h4 {
+      font-size: 0.8rem;
+      font-family: "RoobertTRIAL";
+      font-weight: 600;
+      color: black;
+    }
+
+    ul {
+      padding: 0rem;
+
+      li {
+        list-style: none;
+
+        a {
+          font-size: 0.7rem;
+          font-family: "RoobertTRIAL";
+          font-weight: 500;
+          color: var(--353535, #353535);
+
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .contact___ {
+
+    h4 {
+      font-size: 0.8rem;
+      font-family: "RoobertTRIAL";
+      font-weight: 600;
+      color: black;
+    }
+
+    p {
+      font-size: 0.8rem;
+      font-family: "RoobertTRIAL";
+      color: var(--353535, #353535);
+      font-weight: 500;
+    }
+  }
+
+  .bottom____ {
+    p {
+      font-size: 0.8rem;
+      font-family: "RoobertTRIAL";
+      color: var(--353535, #353535);
+      font-weight: 500;
+    }
+  }
+}
+
+.technology____ {
+  .heading___ {
+    h2 {
+      color: black;
+      font-family: "RoobertTRIAL";
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 61px;
+
+      span {
+        color: #156BCE;
+        font-family: "RoobertTRIAL";
+
+      }
+    }
+
+    p {
+      font-family: "RoobertTRIAL";
+      color: #353535;
+      font-size: 0.8rem;
+    }
+  }
+
+  .tabs____ {
+    .nav-tabs {
+      display: flex;
+      justify-content: space-between;
+      border: none;
+
+
+    }
+
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+      border-bottom: 2px solid #345991;
+      color: #345991;
+      font-family: "RoobertTRIAL";
+      font-weight: 600;
+    }
+
+    .nav-tabs .nav-link {
+      border: none;
+      color: black;
+      font-family: "RoobertTRIAL";
+      font-weight: 500;
+
+    }
+
+    .tabs___bg {
+      border-radius: 13px;
+      border: 2px solid rgba(53, 53, 53, 0.18);
+      background: #E7EFFC;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+
+.tesimonial____ {
+  .btnnn {
+    border-radius: 100px;
+    background: linear-gradient(158deg, #46D4FF -80.48%, #345991 91.3%);
+    display: inline;
+    padding: 0.6rem 2.4rem;
+    text-align: center;
+    font-family: "Roobert TRIAL";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 61px;
+    letter-spacing: 3px;
+    color: white !important;
+  }
+
+  .heading___ {
+    h2 {
+      color: black;
+      font-family: "RoobertTRIAL";
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 61px;
+
+      span {
+        color: #156BCE;
+        font-family: "RoobertTRIAL";
+
+      }
+    }
+
+    p {
+      font-family: "RoobertTRIAL";
+      color: #353535;
+      font-size: 0.8rem;
+    }
+  }
+
+  .tabs____ {
+    border-radius: 23px;
+    border: 3px solid #E7EFFC;
+    padding: 0;
+
+    .nav-tabs {
+      border-radius: 21px 21px 26px 26px;
+      background: #F3F6FA;
+
+      .nav-link {
+        border: none;
+        margin-top: 0.9rem;
+        padding-top: 0;
+      }
+    }
+
+    .tabs___bg {
+      h6 {
+        color: #000;
+        font-family: "RoobertTRIAL";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        padding: 0.3rem 8rem;
+        text-align: center;
+        /* 138.462% */
+      }
+
+      h4 {
+        color: var(--Primiry-Colour, #345991);
+        text-align: center;
+        font-family: "RoobertTRIAL";
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 650;
+        line-height: 35px;
+        /* 135.556% */
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+
+
+// media queryyy start
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .second__section {
+    .blue__background___ {
+      img {
+        display: none;
+      }
+
+      .main___ {
+        .text__ {
+          display: none;
+        }
+
+        .card {
+          width: 100%;
+          padding: .3rem .8rem 0;
+          display: block;
+          position: initial;
+        }
+      }
+    }
+  }
+
+  .tesimonial____ {
+    .tabs____ {
+      .tabs___bg {
+        h6 {
+
+          padding: .3rem 1rem;
+
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 425px) and (max-width: 576px) {
+  .second__section {
+    .blue__background___ {
+      img {
+        display: none;
+      }
+
+      .main___ {
+        .text__ {
+          display: none;
+        }
+
+        .card {
+          width: 100%;
+          padding: .3rem .8rem 0;
+          display: block;
+          position: initial;
+        }
+      }
+    }
+  }
+
+  .tesimonial____ {
+    .tabs____ {
+      .tabs___bg {
+        h6 {
+
+          padding: .3rem 1rem;
+
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .second__section {
+    .blue__background___ {
+      img {
+        display: none;
+      }
+
+      .main___ {
+        .text__ {
+          display: none;
+        }
+
+        .card {
+          width: 100%;
+          padding: .3rem .8rem 0;
+          display: block;
+          position: initial;
+        }
+      }
+    }
+  }
+
+  .tesimonial____ {
+    .tabs____ {
+      .tabs___bg {
+        h6 {
+
+          padding: .3rem 1rem;
+
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .second__section {
+    .blue__background___ {
+      img {
+        display: none;
+      }
+
+      .main___ {
+        .text__ {
+          display: none;
+        }
+
+        .card {
+          width: 100%;
+          padding: .3rem .8rem 0;
+          display: block;
+          position: initial;
+        }
+      }
+    }
+  }
+
+  .tesimonial____ {
+    .tabs____ {
+      .tabs___bg {
+        h6 {
+
+          padding: .3rem 1rem;
+
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .second__section {
+    .blue__background___ {
+      img {
+        display: none;
+      }
+
+      .main___ {
+        .text__ {
+          display: none;
+        }
+
+        .card {
+          width: 100%;
+          padding: .3rem .8rem 0;
+          display: block;
+          position: initial;
+        }
+      }
+    }
+  }
+
+  .tesimonial____ {
+    .tabs____ {
+      .tabs___bg {
+        h6 {
+
+          padding: .3rem 1rem;
+
+        }
+      }
+    }
+  }
+}
+
+// media queryyy end
