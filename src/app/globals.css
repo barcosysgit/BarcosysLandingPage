@@ -63,7 +63,6 @@ button {
   cursor: pointer;
   transition: all 0.3s ease;
   color: white;
-  /* blinking background */
   animation: blink-bg 1.5s infinite;
 }
 @keyframes blink-bg {
@@ -208,7 +207,7 @@ button {
 }
 .second__section .blue__background___ .main___ .card .btn_____ button {
   background: var(--Primiry-Colour, #345991);
-  padding: 0.1rem 1rem;
+  padding: 0.2rem 1.4rem;
   color: white;
   border: 1px solid #345991;
   border-radius: 0.2rem;
@@ -351,10 +350,10 @@ button {
 /* Smooth 360° rotation */
 @keyframes spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(9deg);
   }
   to {
-    transform: rotate(30deg);
+    transform: rotate(-9deg);
   }
 }
 .service____ {
@@ -790,6 +789,28 @@ button {
   .tesimonial____ .tabs____ .tabs___bg h6 {
     padding: 0.3rem 1rem;
   }
+  .container {
+    margin: 1rem;
+  }
+  section {
+    margin: 1rem;
+  }
+  .second__section .pera__1 h2 {
+    font-size: 32px;
+  }
+  .second__section .pera__1 h2 span {
+    font-size: 33px;
+  }
+  .second__section .pera__1 p {
+    font-size: 1rem;
+  }
+  .second__section .compnay__logo {
+    margin-bottom: 1rem;
+  }
+  .second__section .blue__background___ .main___ .card .btn_____ button {
+    padding: 0.3rem 1.4rem;
+    width: 100%;
+  }
 }
 @media (min-width: 425px) and (max-width: 576px) {
   .second__section .blue__background___ img {
@@ -806,6 +827,28 @@ button {
   }
   .tesimonial____ .tabs____ .tabs___bg h6 {
     padding: 0.3rem 1rem;
+  }
+  .container {
+    margin: 1rem;
+  }
+  section {
+    margin: 1rem;
+  }
+  .second__section .pera__1 h2 {
+    font-size: 32px;
+  }
+  .second__section .pera__1 h2 span {
+    font-size: 33px;
+  }
+  .second__section .pera__1 p {
+    font-size: 1rem;
+  }
+  .second__section .compnay__logo {
+    margin-bottom: 1rem;
+  }
+  .second__section .blue__background___ .main___ .card .btn_____ button {
+    padding: 0.3rem 1.4rem;
+    width: 100%;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
@@ -824,6 +867,25 @@ button {
   .tesimonial____ .tabs____ .tabs___bg h6 {
     padding: 0.3rem 1rem;
   }
+  section {
+    margin: 1rem;
+  }
+  .second__section .pera__1 h2 {
+    font-size: 32px;
+  }
+  .second__section .pera__1 h2 span {
+    font-size: 33px;
+  }
+  .second__section .pera__1 p {
+    font-size: 1rem;
+  }
+  .second__section .compnay__logo {
+    margin-bottom: 1rem;
+  }
+  .second__section .blue__background___ .main___ .card .btn_____ button {
+    padding: 0.3rem 1.4rem;
+    width: 100%;
+  }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .second__section .blue__background___ img {
@@ -840,6 +902,25 @@ button {
   }
   .tesimonial____ .tabs____ .tabs___bg h6 {
     padding: 0.3rem 1rem;
+  }
+  section {
+    margin: 1rem;
+  }
+  .second__section .pera__1 h2 {
+    font-size: 32px;
+  }
+  .second__section .pera__1 h2 span {
+    font-size: 33px;
+  }
+  .second__section .pera__1 p {
+    font-size: 1rem;
+  }
+  .second__section .compnay__logo {
+    margin-bottom: 1rem;
+  }
+  .second__section .blue__background___ .main___ .card .btn_____ button {
+    padding: 0.3rem 1.4rem;
+    width: 100%;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
