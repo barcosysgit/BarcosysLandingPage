@@ -24,10 +24,10 @@
 </g>
 <defs>
 <radialGradient id="paint0_radial_141_76" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(61.905 38.2487) scale(77.3607 77.3689)">
-<stop stop-color="#AEB2D5"/>
-<stop offset="0.3" stop-color="#AEB2D5"/>
-<stop offset="0.75" stop-color="#484C89"/>
-<stop offset="1" stop-color="#484C89"/>
+<stop stopColor="#AEB2D5"/>
+<stop offset="0.3" stopColor="#AEB2D5"/>
+<stop offset="0.75" stopColor="#484C89"/>
+<stop offset="1" stopColor="#484C89"/>
 </radialGradient>
 </defs>
 </svg>
