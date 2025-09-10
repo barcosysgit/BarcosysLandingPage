@@ -81,7 +81,6 @@ button {
     linear-gradient(to top, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.5) 40%, rgba(255, 255, 255, 0) 80%),
     url("../../public/image/main-bg.png");
   background-position: 50% 31%;
-  background-size: cover;
   background-repeat: no-repeat;
   animation: fadeIn 1.2s ease-in-out;
 
@@ -206,6 +205,48 @@ button {
             }
           }
 
+          select {
+            width: 100%;
+            padding: 0.4rem 0.4rem 0.4rem 0.4rem;
+            border-radius: 2px;
+            border: 1px solid rgba(32, 89, 178, 0.24);
+            background: #FBFBFC;
+            box-shadow: 3px 2px 4.7px 0 rgba(0, 0, 0, 0.05) inset;
+            font-size: 0.7rem;
+            color: black;
+            font-family: "RoobertTRIAL";
+            transition: all 0.3s ease;
+
+          }
+
+          .select-wrapper {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+          }
+
+          .select-wrapper select {
+            appearance: none;
+            /* hide native arrow */
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 100%;
+            padding-right: 2rem;
+            /* space for icon */
+          }
+
+          .select-wrapper .dropdown-icon {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+            /* clicks pass through to select */
+            color: #555;
+            font-size: 1rem;
+          }
+
+
           textarea {
             width: 100%;
             padding: 0.2rem;
@@ -269,7 +310,8 @@ button {
 }
 
 .numbering__div {
-background: linear-gradient(#fff -5%, #f1f2f5 18%, #f1f2f5 85%, #fff 100%);
+  background: linear-gradient(#fff -5%, #f1f2f5 18%, #f1f2f5 85%, #fff 100%);
+
   .borderr {
     border-right: 1px solid #15151529;
     border-left: 1px solid #15151529;
@@ -470,6 +512,7 @@ background: linear-gradient(#fff -5%, #f1f2f5 18%, #f1f2f5 85%, #fff 100%);
       font-family: "RoobertTRIAL";
       font-size: 0.8rem;
       text-align: justify;
+      letter-spacing: 0.1px;
 
     }
 
@@ -1060,7 +1103,8 @@ background: linear-gradient(#fff -5%, #f1f2f5 18%, #f1f2f5 85%, #fff 100%);
     }
 
   }
-  .expeirence___{
+
+  .expeirence___ {
     padding: 1rem;
   }
 }
@@ -1157,7 +1201,7 @@ background: linear-gradient(#fff -5%, #f1f2f5 18%, #f1f2f5 85%, #fff 100%);
 
   }
 
-  .expeirence___{
+  .expeirence___ {
     padding: 1rem;
   }
 }
@@ -1248,7 +1292,8 @@ background: linear-gradient(#fff -5%, #f1f2f5 18%, #f1f2f5 85%, #fff 100%);
     }
 
   }
-  .expeirence___{
+
+  .expeirence___ {
     padding: 1rem;
   }
 }
@@ -1340,7 +1385,7 @@ background: linear-gradient(#fff -5%, #f1f2f5 18%, #f1f2f5 85%, #fff 100%);
 
   }
 
-  .expeirence___{
+  .expeirence___ {
     padding: 1rem;
   }
 }

@@ -6,6 +6,8 @@ import a2 from "../../../public/image/a-2.svg";
 import a3 from "../../../public/image/a-3.svg";
 import { MdArrowOutward } from "react-icons/md";
 import CountUp from "react-countup";
+import "bootstrap-icons/font/bootstrap-icons.css";
+
 
 
 
@@ -57,15 +59,26 @@ function MainSection() {
                       <input type="text" className="form-control" placeholder="Contact Number" />
                     </div>
                     <div className="input___">
-                      <label htmlFor="">How Can We Help You? <span className="text-danger">*</span></label>
-                      <input type="text" className="form-control" placeholder="Select Option" />
+                      <label htmlFor="exampleFormControlSelect1">
+                        How Can We Help You? <span className="text-danger">*</span>
+                      </label>
+                      <div className="select-wrapper">
+                        <select className="form-control" id="exampleFormControlSelect1">
+                          <option>Select</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                        <i className="bi bi-chevron-down dropdown-icon"></i>
+                      </div>
                     </div>
                     <div className="input___">
                       <label htmlFor="">Tell us about your project<span className="text-danger">*</span></label>
                       <textarea name="" className="form-control" id=""></textarea>
                     </div>
                     <div className="btn_____ text-center">
-                          <button>Schedule a Free Consultation</button>
+                      <button>Schedule a Free Consultation</button>
                     </div>
                   </div>
                 </div>
@@ -75,32 +88,32 @@ function MainSection() {
 
         </div>
       </section>
-       <section className="numbering__div mt-4 py-3">
-      <div className="container d-flex">
-        
-        <div className="dots__">
-          <h6 className="mb-0">
-            <CountUp end={9} duration={2} suffix="+" />
-          </h6>
-          <p className="mb-1">YEARS IN BUSINESS</p>
-        </div>
-        
-        <div className="dots__ mx-4 borderr px-3">
-          <h6 className="mb-0">
-            <CountUp end={500} duration={2.5} suffix="+" />
-          </h6>
-          <p className="mb-1">PRODUCTS COMPLETED</p>
-        </div>
-        
-        <div className="dots__">
-          <h6 className="mb-0">
-            <CountUp end={400} duration={2} suffix="+" />
-          </h6>
-          <p className="mb-1">HAPPY CLIENTS</p>
-        </div>
+      <section className="numbering__div mt-4 py-3">
+        <div className="container d-flex">
 
-      </div>
-    </section>
+          <div className="dots__">
+            <h6 className="mb-0">
+              <CountUp end={9} duration={2} suffix="+" />
+            </h6>
+            <p className="mb-1">YEARS IN BUSINESS</p>
+          </div>
+
+          <div className="dots__ mx-4 borderr px-3">
+            <h6 className="mb-0">
+              <CountUp end={500} duration={2.5} suffix="+" />
+            </h6>
+            <p className="mb-1">PRODUCTS COMPLETED</p>
+          </div>
+
+          <div className="dots__">
+            <h6 className="mb-0">
+              <CountUp end={400} duration={2} suffix="+" />
+            </h6>
+            <p className="mb-1">HAPPY CLIENTS</p>
+          </div>
+
+        </div>
+      </section>
     </>
   )
 }
