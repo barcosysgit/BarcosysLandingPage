@@ -11,16 +11,16 @@
 <path opacity="0.4438" d="M39.0878 53.7359C39.0878 54.4662 37.5917 55.1665 34.9287 55.6828C32.2657 56.1991 28.6539 56.4892 24.8878 56.4892C21.1217 56.4892 17.5099 56.1991 14.8469 55.6828C12.1838 55.1665 10.6878 54.4662 10.6878 53.7359C10.6878 53.0057 12.1838 52.3054 14.8469 51.7891C17.5099 51.2727 21.1217 50.9827 24.8878 50.9827C28.6539 50.9827 32.2657 51.2727 34.9287 51.7891C37.5917 52.3054 39.0878 53.0057 39.0878 53.7359Z" fill="url(#paint2_radial_155_24)"/>
 <defs>
 <linearGradient id="paint0_linear_155_24" x1="2.82038" y1="3.26864" x2="27.2605" y2="24.0874" gradientUnits="userSpaceOnUse">
-<stop stop-color="#5A9FD4"/>
-<stop offset="1" stop-color="#306998"/>
+<stop stopColor="#5A9FD4"/>
+<stop offset="1" stopColor="#306998"/>
 </linearGradient>
 <linearGradient id="paint1_linear_155_24" x1="30.4611" y1="41.8302" x2="21.6794" y2="29.5433" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FFD43B"/>
-<stop offset="1" stop-color="#FFE873"/>
+<stop stopColor="#FFD43B"/>
+<stop offset="1" stopColor="#FFE873"/>
 </linearGradient>
 <radialGradient id="paint2_radial_155_24" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(24.9067 53.7249) rotate(-90) scale(2.75342 12.1057)">
-<stop stop-color="#B8B8B8" stop-opacity="0.498"/>
-<stop offset="1" stop-color="#7F7F7F" stop-opacity="0"/>
+<stop stopColor="#B8B8B8" stop-opacity="0.498"/>
+<stop offset="1" stopColor="#7F7F7F" stop-opacity="0"/>
 </radialGradient>
 </defs>
 </svg>

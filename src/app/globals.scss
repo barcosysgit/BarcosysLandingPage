@@ -66,30 +66,25 @@ button {
     font-size: 0.8rem;
     cursor: pointer;
     transition: all 0.3s ease;
-    color: white;
-    animation: blink-bg 1.5s infinite;
-  }
+    color: black;
 
-  @keyframes blink-bg {
-
-    0%,
-    100% {
-      background: #156bce;
-      /* normal blue */
-    }
-
-    50% {
-      background: #0a111a;
-      /* darker blue */
+    &:hover{
+      background-color: #156BCE;
+      border: 2px solid #156BCE;
+      color: white;
     }
   }
-
-
 }
 
 .second__section {
-  background-image: url(../../public//image//main-bg.png);
+  background-image:
+    linear-gradient(to top, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.5) 40%, rgba(255, 255, 255, 0) 80%),
+    url("../../public/image/main-bg.png");
+  background-position: 50% 31%;
+  background-size: cover;
+  background-repeat: no-repeat;
   animation: fadeIn 1.2s ease-in-out;
+
 
 
   .pera__1 {
@@ -274,7 +269,7 @@ button {
 }
 
 .numbering__div {
-  background: #F1F2F5;
+  background: linear-gradient(to top right, #fff -35%, #f1f2f5 150%), linear-gradient(to top left, #fff 197%, #f1f2f5 -248%);
 
   .borderr {
     border-right: 1px solid #15151529;
@@ -287,24 +282,11 @@ button {
       font-size: 1.9rem;
       font-family: "RoobertTRIAL";
       font-weight: 600;
-      animation: countUp 2s ease forwards;
-      animation: smooth-blink 2s infinite ease-in-out;
+
 
     }
 
-    @keyframes smooth-blink {
 
-      0%,
-      100% {
-        opacity: 1;
-      }
-
-      50% {
-        opacity: 0.3;
-      }
-
-      // 👈 stays visible but dimmed
-    }
 
     p {
       font-size: 0.7rem;
@@ -375,6 +357,10 @@ button {
     border: 2px solid #E5E5E8;
     background: #FFF;
     padding: 2rem;
+    background-image: url(../../public/image/whatwedo.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
   }
 
   img {
@@ -1050,6 +1036,26 @@ button {
 
   }
 
+
+  .whatwedo___ .border___ {
+    background: none;
+
+    h2 {
+
+      padding-top: 1rem;
+      font-size: 20px;
+    }
+  }
+
+  .DoneProject___ {
+    .sector-card {
+      .bh {
+        padding: 0 0.5rem  !important;
+        margin-bottom: 0.8rem;
+      }
+    }
+
+  }
 }
 
 
@@ -1095,7 +1101,7 @@ button {
     margin: 1rem;
   }
 
-  
+
   .second__section .pera__1 h2 {
     font-size: 32px;
 
@@ -1120,6 +1126,26 @@ button {
     padding: .3rem 1.4rem;
 
     width: 100%;
+
+  }
+
+  .whatwedo___ .border___ {
+    background: none;
+
+    h2 {
+
+      padding-top: 1rem;
+      font-size: 18px;
+
+    }
+  }
+
+  .DoneProject___ {
+    .sector-card {
+      .bh {
+ padding: 0 0.5rem  !important;
+        margin-bottom: 0.8rem;      }
+    }
 
   }
 }
@@ -1162,7 +1188,7 @@ button {
   section {
     margin: 1rem;
   }
-  
+
   .second__section .pera__1 h2 {
     font-size: 32px;
 
@@ -1187,6 +1213,26 @@ button {
     padding: .3rem 1.4rem;
 
     width: 100%;
+
+  }
+
+  .whatwedo___ .border___ {
+    background: none;
+
+    h2 {
+
+      padding-top: 1rem;
+      font-size: 22px;
+
+    }
+  }
+
+  .DoneProject___ {
+    .sector-card {
+      .bh {
+ padding: 0 0.5rem  !important;
+        margin-bottom: 0.8rem;      }
+    }
 
   }
 }
@@ -1229,7 +1275,7 @@ button {
   section {
     margin: 1rem;
   }
-  
+
   .second__section .pera__1 h2 {
     font-size: 32px;
 
@@ -1254,6 +1300,25 @@ button {
     padding: .3rem 1.4rem;
 
     width: 100%;
+
+  }
+
+  .whatwedo___ .border___ {
+    background: none;
+
+    h2 {
+
+      padding-top: 1rem;
+      font-size: 22px;
+
+    }
+  }
+  .DoneProject___ {
+    .sector-card {
+      .bh {
+ padding: 0 0.5rem  !important;
+        margin-bottom: 0.8rem;      }
+    }
 
   }
 }

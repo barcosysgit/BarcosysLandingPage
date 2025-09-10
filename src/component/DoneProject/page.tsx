@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation , Autoplay  } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import { MdKeyboardArrowRight } from "react-icons/md";
@@ -43,10 +43,10 @@ function DoneProject() {
     const handlePrev = () => {
         setProgress((prev) => Math.max(prev - 20, 0));
     };
-console.log(progress);
+    console.log(progress);
 
     return (
-        <section className="DoneProject___">
+        <section className="DoneProject___ m-0">
             <div className="container">
                 <div className="heading___ text-center">
                     <h4>
@@ -62,9 +62,9 @@ console.log(progress);
                         prevEl: ".swiper-button-prev-custom",
                     }}
                     autoplay={{
-    delay: 2000,       // 3 seconds per slide
-    disableOnInteraction: false, // keeps autoplay even if user interacts
-  }}
+                        delay: 2000,       // 3 seconds per slide
+                        disableOnInteraction: false, // keeps autoplay even if user interacts
+                    }}
                     breakpoints={{
                         0: {       // mobile
                             slidesPerView: 1,
@@ -79,7 +79,7 @@ console.log(progress);
                             spaceBetween: 20,
                         },
                     }}
-                    modules={[Navigation , Autoplay]}
+                    modules={[Navigation, Autoplay]}
                     className="transforming-swiper"
                 >
                     {sectors.map((sec, index) => (
@@ -87,7 +87,7 @@ console.log(progress);
                             <section className="sector-card">
                                 <div className="container">
                                     <div className="row">
-                                        <div className="col-md-6 p-0 pe-3">
+                                        <div className="col-md-6 p-0 pe-3 bh">
                                             <Image src={sec.img} alt="img" className="img-fluid" />
                                         </div>
                                         <div className="col-md-6 d-flex align-items-center">
@@ -118,7 +118,7 @@ console.log(progress);
                             <MdOutlineArrowBackIosNew style={{ marginBottom: "0.3rem" }} />
 
                         </button>
-                       
+
                         <button
                             className="swiper-button-next-custom"
                             onClick={handleNext}

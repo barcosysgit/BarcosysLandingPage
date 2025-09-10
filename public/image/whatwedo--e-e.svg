@@ -3,7 +3,7 @@
 <rect x="1.45068" y="1" width="1280" height="334" rx="10" fill="white"/>
 <ellipse opacity="0.5" cx="310.347" cy="294.678" rx="414.856" ry="486.502" fill="#E9ECF3" fill-opacity="0.79"/>
 </g>
-<rect x="1.45068" y="1" width="1280" height="334" rx="10" stroke="#E5E5E8" stroke-width="2" stroke-linejoin="round"/>
+<rect x="1.45068" y="1" width="1280" height="334" rx="10" stroke="#E5E5E8" strokeWidth="2" stroke-linejoin="round"/>
 <defs>
 <clipPath id="clip0_461_355">
 <rect x="1.45068" y="1" width="1280" height="334" rx="10" fill="white"/>
