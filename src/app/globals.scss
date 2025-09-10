@@ -68,7 +68,7 @@ button {
     transition: all 0.3s ease;
     color: black;
 
-    &:hover{
+    &:hover {
       background-color: #156BCE;
       border: 2px solid #156BCE;
       color: white;
@@ -90,7 +90,7 @@ button {
   .pera__1 {
     h2 {
       font-weight: 400;
-      font-size: 42px;
+      font-size: 37px;
       line-height: 44px;
       font-family: "RoobertTRIAL";
       opacity: 0;
@@ -98,7 +98,7 @@ button {
       animation: slideUp 0.8s ease forwards;
 
       span {
-        font-size: 40px;
+        font-size: 38px;
         font-weight: 700;
         font-family: "RoobertTRIAL";
         animation-delay: 0.2s;
@@ -269,8 +269,7 @@ button {
 }
 
 .numbering__div {
-  background: linear-gradient(to top right, #fff -35%, #f1f2f5 150%), linear-gradient(to top left, #fff 197%, #f1f2f5 -248%);
-
+background: linear-gradient(#fff -5%, #f1f2f5 18%, #f1f2f5 85%, #fff 100%);
   .borderr {
     border-right: 1px solid #15151529;
     border-left: 1px solid #15151529;
@@ -672,9 +671,14 @@ button {
 
 
 .expeirence___ {
-  background-image: url(../../public/image/bannerexperience.png);
-  padding: 3rem 0rem;
-  background-size: cover;
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.85) 30%, rgba(0, 0, 0, 0.2) 70%, rgba(0, 0, 0, 0) 100%),
+    url(../../public/image/bannerexperience.png);
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-color: #000;
+  padding: 3rem;
 
   .heading___ {
     h4 {
@@ -1050,11 +1054,14 @@ button {
   .DoneProject___ {
     .sector-card {
       .bh {
-        padding: 0 0.5rem  !important;
+        padding: 0 0.5rem !important;
         margin-bottom: 0.8rem;
       }
     }
 
+  }
+  .expeirence___{
+    padding: 1rem;
   }
 }
 
@@ -1143,10 +1150,15 @@ button {
   .DoneProject___ {
     .sector-card {
       .bh {
- padding: 0 0.5rem  !important;
-        margin-bottom: 0.8rem;      }
+        padding: 0 0.5rem !important;
+        margin-bottom: 0.8rem;
+      }
     }
 
+  }
+
+  .expeirence___{
+    padding: 1rem;
   }
 }
 
@@ -1230,10 +1242,14 @@ button {
   .DoneProject___ {
     .sector-card {
       .bh {
- padding: 0 0.5rem  !important;
-        margin-bottom: 0.8rem;      }
+        padding: 0 0.5rem !important;
+        margin-bottom: 0.8rem;
+      }
     }
 
+  }
+  .expeirence___{
+    padding: 1rem;
   }
 }
 
@@ -1313,13 +1329,19 @@ button {
 
     }
   }
+
   .DoneProject___ {
     .sector-card {
       .bh {
- padding: 0 0.5rem  !important;
-        margin-bottom: 0.8rem;      }
+        padding: 0 0.5rem !important;
+        margin-bottom: 0.8rem;
+      }
     }
 
+  }
+
+  .expeirence___{
+    padding: 1rem;
   }
 }
 

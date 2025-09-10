@@ -18,8 +18,8 @@ function MainSection() {
           <div className="row">
             <div className="col-md-5">
               <div className="pera__1 pt-3">
-                <h2>We manage your  IT, <br /> <span>so you can manage <br />your business.</span> </h2>
-                <p className="pt-2">Take charge of your buiness continuity with innovation IT solution</p>
+                <h2>We Manage Your Tech<br /> <span>So you can handle  <br />Your Business Growth</span> </h2>
+                <p className="pt-2">Ditch GDPR headaches and cross-border tech hassles—consider it done.</p>
                 <button>Let&apos;s Discuss <span><MdArrowOutward /></span></button>
               </div>
               <div className="d-flex mt-3 compnay__logo">

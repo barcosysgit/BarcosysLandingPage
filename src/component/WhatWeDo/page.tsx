@@ -12,7 +12,7 @@ function WhatWeDo() {
                         <div className="col-md-7">
                             <div className='heading__'>
                                 <button>What We Do</button>
-                                <h2>Transforming Tech Complexity <br/> Into Simplicity</h2>
+                                <h2>Transforming Digital Complexity <br/>Into Competitive Advantage</h2>
                             </div>
                         </div>
                         <div className="col-md-5">
