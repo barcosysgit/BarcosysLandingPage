@@ -17,7 +17,7 @@ function CompanyTechnology() {
             <section className='technology____ my-5'>
                 <div className="container">
                     <div className="row">
-                        <div className='heading___ text-center'>
+                        <div className='heading___ text-center' data-aos="fade-right">
                             <h2> <span>Technologies </span>  In Which we work</h2>
                             <p>We offer only well-recognized and time-tested technologies to support any of your business goals.</p>
                         </div>

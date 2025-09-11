@@ -45,7 +45,7 @@ function TransformingSlide() {
     return (
         <section className="transforming___">
             <div className="container">
-                <div className="heading___ text-center">
+                <div className="heading___ text-center" data-aos="fade-right">
                     <h4>
                         <span>Transforming</span> Challenges <br />
                         Across Different Sectors

@@ -10,13 +10,13 @@ function WhatWeDo() {
                 <div className="container border___">
                     <div className="row">
                         <div className="col-md-7">
-                            <div className='heading__'>
+                            <div className='heading__' data-aos="fade-left">
                                 <button>What We Do</button>
                                 <h2>Transforming Digital Complexity <br/>Into Competitive Advantage</h2>
                             </div>
                         </div>
                         <div className="col-md-5">
-                            <div>
+                            <div data-aos="zoom-in">
                                 <Image src={globe} alt="global"  className='img-fluid'/>
                             </div>
                         </div>

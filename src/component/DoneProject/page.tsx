@@ -48,7 +48,7 @@ function DoneProject() {
     return (
         <section className="DoneProject___ m-0">
             <div className="container">
-                <div className="heading___ text-center">
+                <div className="heading___ text-center" data-aos="fade-left">
                     <h4>
                         <span>What We </span> Done Our Projects
                     </h4>

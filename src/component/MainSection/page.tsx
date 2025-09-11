@@ -1,4 +1,5 @@
 'use client'
+import { useEffect } from "react";
 import Image from "next/image";
 import blue from "../../../public/image/blue-background.png";
 import a1 from "../../../public/image/a-1.svg";
@@ -7,19 +8,32 @@ import a3 from "../../../public/image/a-3.svg";
 import { MdArrowOutward } from "react-icons/md";
 import CountUp from "react-countup";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 
 
 
 
 function MainSection() {
+  useEffect(() => {
+    AOS.init({
+      // Global settings:
+      duration: 500, // Start faster (500ms)
+      offset: 200, // offset (in px) from the original trigger point
+      easing: "ease-in-out", // Smooth easing for the animation
+      disable: "mobile", // Disable on mobile
+    });
+  }, []);
   return (
     <>
       <section className="second__section">
         <div className="container">
           <div className="row">
             <div className="col-md-5">
-              <div className="pera__1 pt-3">
+              <div className="pera__1 pt-4" data-aos="fade-right"
+                data-aos-duration="1000">
                 <h2>We Manage Your Tech<br /> <span>So you can handle  <br />Your Business Growth</span> </h2>
                 <p className="pt-2">Ditch GDPR headaches and cross-border tech hassles—consider it done.</p>
                 <button>Let&apos;s Discuss <span><MdArrowOutward /></span></button>
@@ -41,7 +55,8 @@ function MainSection() {
               <div className="blue__background___ mt-4">
                 <Image src={blue} alt="blue" className="img-fluid" />
                 <div className="main___">
-                  <div className="text__">
+                  <div className="text__" data-aos="fade-left"
+                data-aos-duration="2000">
                     <h4>Ready to elevate your <br /> digital presence with us?</h4>
                     <p>Schedule your meeting and embark on a journey towards success.</p>
                   </div>
@@ -88,7 +103,7 @@ function MainSection() {
 
         </div>
       </section>
-      <section className="numbering__div mt-4 py-3">
+      <section className="numbering__div mt-4 py-3" >
         <div className="container d-flex">
 
           <div className="dots__">

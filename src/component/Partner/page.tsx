@@ -13,7 +13,7 @@ function Partner() {
                     <hr />
                     <div className="row">
                         <div className="col-md-6">
-                            <div className='heading___'>
+                            <div className='heading___' data-aos="fade-right">
                                 <button>Partners</button>
                                 <h2 className='pt-2'>We Are Partner At</h2>
                                 <p>The company needed to complete a complex migration on <br /> a tight deadline to avoid millions of dollars in post- <br />contract fees and fines.</p>

@@ -18,7 +18,7 @@ function ClientTestimonial() {
     <section className='tesimonial____ my-5'>
       <div className="container">
         <div className="row">
-          <div className='heading___ text-center'>
+          <div className='heading___ text-center' data-aos="fade-right">
             <p className='btnnn'>CLIENT TESTIMONIALS</p>
             <h2><span>What Our </span>Clients Say About Us </h2>
             <p>At Barcosys, we measure our success by the success of our clients. That’s why we’re proud <br /> to share their experiences working with us.</p>
